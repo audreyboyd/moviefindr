@@ -4,12 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>HomeScreen</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
-    <link rel="stylesheet" href="assets/css/Navigation-with-Button.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Make Your Selection</title>
+    <script src="https://kit.fontawesome.com/aef8920e22.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
@@ -24,28 +20,47 @@
         </div>
     </nav>
     <div class="text-center" style="height: 60px;margin-top: 10px;">
+
+        <! -- This title will change based off which movie is being showed -->
         <h1 id="movieTitle" style="text-shadow: 3px 3px rgb(90,92,98);">Back to the Future</h1>
     </div>
-    <div class="text-center justify-content-center align-items-center align-content-center"><img id="moviePoster" style="background: url(&quot;assets/img/358456.jpg&quot;);width: 250px;height: 320px;margin-top: 0px;margin-right: 0px;margin-left: 0px;"></div>
+    <! -- The Genre text and Description text are below -- >
+    <div class="text-center" style="height: 70px;">
+        <small id="genre" class="d-block" style="font-size: 22px; text-shadow: 2px 2px rgb(90,92,98);">Genre:</small>
+        <small id="description" class="d-block" style="font-size: 16px; text-shadow: 1px 1px rgb(90,92,98);">Description:</small>
+    </div>
+
+        <! -- The movie and url is here -->
+    <div class="text-center justify-content-center align-items-center align-content-center">
+        <img id="movieImage" style="background: url();width: 250px;height: 320px;margin-top: 0px;margin-right: 0px;margin-left: 0px;">
+    </div>
+
     <div class="text-center">
         <div class="table-responsive">
             <table class="table">
                 <thead>
+
+                <! -- The two buttons are below. An X for selecting no for a movie, and a heart for selecting yes. -->
                     <tr>
-                        <th style="color: rgb(165,167,173);border-style: none;">Column 1<button id="yesBtn" class="btn btn-primary d-inline-block float-right" type="button" style="background: rgb(90,92,98);border-style: none;width: 60px;height: 45px;"><i class="fa fa-remove" style="width: 16px;font-size: 25px;"></i></button></th>
-                        <th
-                            style="color: rgb(165,167,173);border-style: none;">Colu<button id="noBtn" class="btn btn-primary d-inline-block float-left" type="button" style="background: rgb(90,92,98);border-style: none;width: 60px;height: 45px;"><i class="fa fa-heart" style="font-size: 20px;padding-top: 3px;"></i></button>mn
-                            2</th>
+                        <th style="color: rgb(165,167,173);border-style: none;">Column 1
+                            <button id="noBtn" class="btn btn-primary d-inline-block float-right" type="button" style="background: rgb(90,92,98);border-style: none;width: 60px;height: 45px;">
+                            <i class="fa fa-remove" style="width: 16px;font-size: 25px;"></i>
+                            </button></th>
+                        <th style="color: rgb(165,167,173);border-style: none;">Column 2
+                            <button id="yesBtn" class="btn btn-primary d-inline-block float-left" type="button" style="background: rgb(90,92,98);border-style: none;width: 60px;height: 45px;">
+                                <i class="fa fa-heart" style="font-size: 20px;padding-top: 3px;"></i>
+                            </button>
+                        </th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr></tr>
-                    <tr></tr>
-                </tbody>
             </table>
-        </div><button id="selectionBtn" class="btn btn-primary" type="button" style="background: rgb(90,92,98);border-style: none;width: 178px;height: 43px;">Show my Selections</button></div>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        </div>
+        <! -- Button for moving to movie selection page -->
+        <button id="selectionBtn" class="btn btn-primary" type="button"
+                style="background: rgb(90,92,98);border-style: none;width: 178px;height: 43px;">
+            Show my Selections
+        </button>
+    </div>
 </body>
 
 </html>
