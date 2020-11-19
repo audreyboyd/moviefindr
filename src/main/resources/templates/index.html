@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" xmlns:th="https://www.thymeLeaf.org">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Home</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -26,7 +26,7 @@
     <div style="height: 650px;text-align: center;">
         <h1 style="margin-top: 150px;">Welcome to Movie Findr!</h1>
         <!-- Button to navigate to the genre page -->
-        <button class="btn btn-primary text-center" type="button" style="background: rgb(90,92,98);padding-top: 6px;margin-top: 50px;border-width: 0px;border-style: none;">Find Something to Watch</button>
+        <a th:href="@{/genreForm}" class="btn btn-primary text-center" type="button" style="background: rgb(90,92,98);padding-top: 6px;margin-top: 50px;border-width: 0px;border-style: none;">Find Something to Watch</a>
     </div>
 </body>
 
