@@ -23,19 +23,19 @@ public class MoviefindrController {
 	
 	@GetMapping("/voteForm")
 	public String voteForm() {
-		//take you to the vote form
+		//TODO take you to the vote form
 		return "vote";
 	}
 	
 	@GetMapping("/selectedForm")
 	public String selectedForm() {
-		//take you to the selected form
+		//TODO take you to the selected form
 		return "selected";
 	}
 	
 	@GetMapping("/genreForm")
 	public String genreForm() {
-		//take you to the genre form
+		//TODO take you to the genre form
 		return "genre";
 	}
 }
